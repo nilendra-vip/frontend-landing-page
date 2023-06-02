@@ -1,0 +1,262 @@
+@font-face {
+    font-family: mazius;
+    src: url(./fonts//Mazius-Extraitalic.121a71a7.otf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* user-select: none; */
+    scroll-behavior: smooth;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.reveal .parent{
+    display: block;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.reveal .parent .child{
+    display: block;
+    /* transform: translateY(100%); */
+}
+.child span{
+    display: inline-block;
+}
+#loader{
+    width: 100%;
+    height: 100vh;
+    /* background-color: tomato; */
+    position:absolute;
+    overflow: hidden;
+}
+#loader #one{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#loader #one #box{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 0;
+}
+
+#loader #one #box #part1{
+    width: 300px;
+    height: 50px;
+    /* background-color: tomato; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#loader #one #box #part1 p{
+    font-family: gilroy;
+    font-size: 1vw;
+    text-align: center;
+}
+#loader #one #box #part2{
+    width: 100%;
+    height: 100px;
+    /* background-color: springgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#loader #one #box #part2 h1{
+    /* overflow: hidden; */
+    font-family: gilroy;
+    font-size: 6vw;
+    width: 100%;
+    text-align: center;
+}
+#loader #one #box #part2 h1 #a1{
+    font-family:mazius;
+    color: #14CF93;
+}
+#loader #one #box #part3{
+    width: 50px;
+    height: 50px;
+    /* background-color: royalblue; */
+}
+
+#loader #hara{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    background-color: #14CF93;
+}
+#loader #home{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+}
+
+#home{
+    width: 100%;
+    /* background-color:white; */
+}
+#home #page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0;
+    position: relative;
+}
+#home #page1 #navbar{
+    width: 100%;
+    height: 10vh;
+    /* background-color: springgreen; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 70px;
+}
+#home #page1 #navbar a{
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    font-family: gilroy;
+    text-transform: uppercase;
+    font-size: .8vw;
+    position: relative;
+    
+}
+#home #page1 #navbar a .line{
+    display: inline-block;
+    height: 1.35px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+#home #page1 #navbar a #l1{
+    left: 0;
+    width: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    transition-delay: 0.2s;
+}
+#home #page1 #navbar a #l2{
+    right: 0;
+    width: 100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#home #page1 #navbar a:hover #l1{
+    width: 100%;
+}
+#home #page1 #navbar a:hover #l2{
+    width: 0;
+}
+
+#home #page1 #head{
+    margin-top: 15vh;
+}
+
+
+#home #page1 #head .box{
+    width: 100%;
+    height: 25vh;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    /* background-color: royalblue; */
+    /* border-bottom: 1px solid black; */
+}
+
+#home #page1 #head #b1{
+    display: flex;
+    overflow: hidden;
+}
+#home #page1 #head #b1 #left{
+    width: 60%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    position: relative;
+}
+#home #page1 #head h1 span{
+    display: inline-block;
+}
+#home #page1 #head #b1 #left h1{
+    font-family: gilroy;
+    font-size: 12vw;
+    font-weight: 600;
+    opacity: 0.8;
+}
+#home #page1 #head #b1 #right{
+    width: 40%;
+    height: 100%;
+    /* background-color: pink; */
+    display: flex;
+    gap: 150px;
+    padding: 40px 60px;
+}
+#home #page1 #head #b1 #right h5{
+    font-family: gilroy;
+    font-size: 0.75vw;
+    opacity: 0.5;
+}
+
+
+#home #page1 #head #b2{
+    display: flex;
+    overflow: hidden;
+}
+#home #page1 #head #b2 #left{
+    width: 40%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+#home #page1 #head #b2 #left #pic{
+    width: 65px;
+    height: 65px;
+    /* background-color: red; */
+    border-radius: 50%;
+    margin: 55px 0 0 80px;
+    background-image: url(https://abhishekjha.me/down-arrow.040970d7.svg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#home #page1 #head #b2 #left h1{
+    color: #14CF93;
+    font-family: mazius;
+    font-size: 11vw;
+    margin-top: -20px;
+}
+#home #page1 #head #b2 #right{
+    width: 60%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+#home #page1 #head #b2 #right h1{
+    font-family: gilroy;
+    font-size: 12vw;
+    font-weight: 600;
+    opacity: .8;
+}
+
+#home #page2{
+    width: 100%;
+    height: 100vh;
+    background-color: springgreen;
+}
